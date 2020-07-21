@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- the <head> contains only the meta data -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Maker</title>
+<!-- link to google fonts: Almendra Display for headings -->  
+    <link href='https://fonts.googleapis.com/css?family=Almendra Display' rel='stylesheet'>
+<!-- link to google fonts: Arima Madurai for body -->  
+    <link href='https://fonts.googleapis.com/css?family=Arima Madurai' rel='stylesheet'>
+<!--links to style.css which holds all my styling-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+  <!-- back to top button-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button>
+<!-- add a navigation menu bar - hover and will take you to the section-->
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+      <a href="#choose">Choose an Outfit</a>
+      <a href="#about">About Us</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact Us</a>
+        <div class="search-container">
+          <input id="search-input" type="text" placeholder="Search.." name="search">
+          <button id="search-button">Search</button>
+          </form>
+        </div>
+    </div><br>
+    <body>
+
+    
+<div>
+  <div style= "width:58%; display:inline-block;">
+    <h2> Welcome to Outfit Maker!</h2>
+    <p>This is a sample website so I can practice some of the HTML/CSS features that we are learning about.
+      For example, the above the navigation bar uses <u>anchor links</u>.</p> 
+    <p>When you click on an option (ie 'Choose an Outfit' or 'About Us') it will take you immediately to that heading within this page.
+    </p>
+    <p> The currently selected page (which right now is 'Home', as you are on the Homepage), will be shown in <span style="color: rgb(238, 108, 130)">pink</span>. </p>
+      When you hover over an option, it will change to <span style="color: grey">light grey</span> .</p>
+  </div>
+
+
+  <div style="width:40%; display:inline-block; align-content:center;";>
+    <img src = "images/logo.jpg" alt = "Sample pic" class="center" />
+  </div>
+</div>
+    
+
+<!-- using a flex container to hold photos-->
+
+  <div class="flex-container-one">
+    <img src="images/closet.jpg" alt="" height="200px">
+    <img src="images/flatlay.jpg" alt="" height="200px">
+    <img src="images/hanging.jpg" alt="" height="200px">
+    <img src="images/laptopcoffee.jpg" alt="" height="200px">
+  </div>
+
+  
+  <a name="choose"></a>
+  <h2 class="headings"> Choose an Outfit</h2>
+  <!-- using block quote/ blockquote cite-->
+
+  <p>Here is a quote from wikiHow.com on 'How To Pick An Outfit':</p>
+  <blockquote cite="https://www.wikihow.com/Pick-Out-an-Outfit">
+    "Picking out an outfit can be overwhelming, especially if you aren’t sure where to start. 
+    By learning a few simple tricks, you’ll easily be choosing perfect outfits in no time. The key is to first 
+    spend a little time organizing your wardrobe, and then get the hang of building an outfit, piece by piece. 
+    Once you get the process down, picking out outfits will start to be fun instead of overwhelming!."
+  </blockquote>
+  <p> Use our outfit generator to decide what you can wear .......</p>
+  <button onclick="document.location='choose-an-outfit.html'">
+        <a href="choose-an-outfit.html">Go to the outfit generator</a>
+  </button>
+
+
+  <a name="gallery"></a>
+  <h2 class="headings">Gallery</h2>
+    <div class="flex-container-one">
+      <img src="images/closet.jpg" alt="" height="200px">
+      <img src="images/flatlay.jpg" alt="" height="200px">
+      <img src="images/hanging.jpg" alt="" height="200px">
+      <a href="gallery.html"><img src="images/addtext_com_MDAwMTA2MTc2MzQ.jpg" alt="gallery.html" opacity=0.6 alt="" height="200px"></a>
+    </div>
+
+
+  <a name="about"></a>
+  <h2 class="headings">About Us</h2>
+  <p> This is my first sample web page to apply my knowledge on HTML/CSS and javascript.</p>
+  <p>Click <a href="about-us.html">here</a> to find out more!</p>
+
+  <a name="contact"></a>
+  <h2 class="headings">Contact Us</h2>
+    <h3> Have a question or want to give us feedback?</h3>
+    <p>Fill out the form below to let us know.</p>
+
+<div class="contact-container">
+  <form action="/feedback" method="POST">
+
+    <label>First name:</label>
+    <input type="text" id="firstName" name="firstName"><br>
+    <label>Last name:</label>
+    <input type="text" id="lastName" name="lastName"><br>
+    <label>Email:</label>
+    <input type="email" id="email" name="email"><br>
+    <label>Enter your feedback:</label>
+
+    <textarea id="feedback" name="feedback" rows="4" cols="50">
+    </textarea><br>
+  
+    <input type="submit" value="Submit">
+  </form> 
+</div>
+    
+
+<div class="social-media">
+  <a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/PLACEHOLDER"><img alt="follow me on twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter40x40.png" border=0></a>
+  <a target="_blank" title="follow me on facebook" href="https://www.facebook.com/PLACEHOLDER"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" border=0></a>
+  <a target="_blank" title="follow me on instagram" href="https://www.instagram.com/PLACEHOLDER"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram40x40.png" border=0></a>
+</div>
+<br>
+<script type = "text/javascript" src="site.js"></script>
+ <script type = "text/javascript" src="index.js"></script>
+
+
+</body>
+<hr>
+<footer>
+  &copy; Copyright 2020 Aileen Gallacher
+</footer>
+
+</html>

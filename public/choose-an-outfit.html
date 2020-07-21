@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose an Outfit</title>
+<!-- link to google fonts: Almendra Display for headings -->  
+    <link href='https://fonts.googleapis.com/css?family=Almendra Display' rel='stylesheet'>
+<!-- link to google fonts: Arima Madurai for body -->  
+    <link href='https://fonts.googleapis.com/css?family=Arima Madurai' rel='stylesheet'>
+<!--links to style.css which holds all my styling-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+<body class="outfit">
+    <!-- back to top button-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button>
+<!-- add a navigation menu bar - hover and will take you to the section-->
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+      <a href="#outfit">Choose an Outfit</a>
+      <a href="about-us.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+    <h2 class="headings">Choose an Outfit</h2>
+
+<p>Here is a quick little survey that will show you an image of an outfit suggestion based on your answers to some questions.</p>
+
+<!-- STARTING MY SAMPLE QUIZ HERE-->
+<div id="wrapper">
+  <h2>What should you wear today?</h2>
+  <p>Take this questionnaire to get a suggestion!</p>
+  
+  <form id="quiz" name="file" onsubmit="return false">
+     <!-- Question 1 -->
+     <h3>What is the weather forecast?</h3>
+     <!-- Here are the choices for the second question. Notice how each input tag has the same name (q2), but a different name than the previous question. -->
+     <label><input type="radio" name="q1" value="ans1">
+       Sunny and warm
+     </label><br />
+     <label><input type="radio" name="q1" value="ans2">
+       Cold and cloudy
+     </label><br />
+     <label><input type="radio" name="q1" value="ans3">
+       Rainy
+     </label><br />
+ 
+    <!-- Question 2 -->
+    <h3>Where are you going?</h3>
+    <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+    <!-- The value is which answer the choice corresponds to. -->
+    <label><input type="radio" name="q2" value="ans1">
+      Casual day out (movies, lunch)
+    </label><br />
+    <label><input type="radio" name="q2" value="ans2">
+      Casual night out (dinner, drinks)
+    </label><br />
+    <label><input type="radio" name="q2" value="ans3">
+      Work
+    </label><br />
+
+    <!-- Question 3 
+    <h3>What is your style?</h3>
+    <label><input type="radio" name="q3" value="ans1">
+      Trendy
+    </label><br />
+    <label><input type="radio" name="q3" value="ans2">
+      Daggy
+    </label><br />
+    <label><input type="radio" name="q3" value="ans3">
+      Old-fashioned
+    </label><br />
+    <div id="display image" class="center">-->
+    <button type="submit" id="submit" onclick="surveyAnswers()">Submit Your Answers</button>
+    <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+    
+  </form>
+
+  <div id="answer" class="center">Your result will show up here!</div>
+</div>
+
+<div style= "width:30%; display:inline-block; text-align:center;">
+  <h2>Want to see more outfits?</h2>
+  <p>Click an option below to see more images.</p>
+    
+    <div id="choose-outfit-buttons">
+      <button id="warm-casual" title="Warm Casual Look">Warm weather: Casual</button><br>
+      <button id="warm-work"  title="Warm Work Look">Warm weather: Work</button><br>
+      <button id="cold-casual"  title="Cold Casual Look">Cold weather: Casual</button><br>
+      <button id="cold-work"  title="Cold Work Look">Cold weather: Work</button><br>
+    </div>
+  </div>
+
+  <div style= "width:30%; display:inline-block;">
+    <br>
+    <br>
+    <div id="outfit-image-container" style="text-align: center;">
+  </div>
+
+  </div>
+  
+  <div style= "width:30%; display:inline-block;">
+    <br>
+    <br>
+    <p id="shop-look"></p>
+  </div>
+</div>
+</div>
+
+<script type = "text/javascript" src="site.js"></script>
+<script type = "text/javascript" src="choose-an-outfit.js"></script>
+
+<!-- RETURN TO HOMEPAGE-->
+<button onclick="document.location='index.html'" class="center">
+  <a href="../index.html">Go back to homepage</a>
+</button>
+
+</body>
+<div class="social-media">
+  <a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/PLACEHOLDER"><img alt="follow me on twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter40x40.png" border=0></a>
+  <a target="_blank" title="follow me on facebook" href="https://www.facebook.com/PLACEHOLDER"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" border=0></a>
+  <a target="_blank" title="follow me on instagram" href="https://www.instagram.com/PLACEHOLDER"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram40x40.png" border=0></a>
+</div>
+<hr>
+<footer>
+  &copy; Copyright 2020 Aileen Gallacher 
+</footer>
+
+</html>
